@@ -28,6 +28,24 @@ The project uses __Qiskit__ for performing Quantum Computation routines which is
 * ChEMBL API
 
 ## Installation
+Installing Qiskit
+'''
+$pip install qiskit
+$pip install pylatexen
+$pip install qiskit_machine_learning
+'''
+
+Installing Dataset API's
+'''
+$pip install pubchempy
+$pip install chembl_webresource_client
+'''
+
+Installing __InSilicoQ__
+'''
+$git clone https://github.com/QaiAbdi/InSilicoQ.git
+$cd ../InSilicoQ
+$python setup.py install
 
 
 
