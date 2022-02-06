@@ -78,19 +78,20 @@ qcomp_backend = QuantumInstance(BasicAer.get_backend('qasm_simulator'), shots=10
                                 seed_simulator=seed, seed_transpiler=seed)
 
 def qkern_default():
-return  QuantumKernel(feature_map=qfm_default, quantum_instance=qcomp_backend)
+
+    return  QuantumKernel(feature_map=qfm_default, quantum_instance=qcomp_backend)
 
 def qkern_eq8():
-return  QuantumKernel(feature_map=qfm_eq8, quantum_instance=qcomp_backend)
+    return  QuantumKernel(feature_map=qfm_eq8, quantum_instance=qcomp_backend)
 
 def qkern_eq9():
-return  QuantumKernel(feature_map=qfm_eq9, quantum_instance=qcomp_backend)
+    return  QuantumKernel(feature_map=qfm_eq9, quantum_instance=qcomp_backend)
 
 def qkern_eq10():
-return  QuantumKernel(feature_map=qfm_eq10, quantum_instance=qcomp_backend)
+    return  QuantumKernel(feature_map=qfm_eq10, quantum_instance=qcomp_backend)
 
 def qkern_eq11():
-return  QuantumKernel(feature_map=qfm_eq11, quantum_instance=qcomp_backend)
+    return  QuantumKernel(feature_map=qfm_eq11, quantum_instance=qcomp_backend)
 
 def qkern_eq12():
-return QuantumKernel(feature_map=qfm_eq12, quantum_instance=qcomp_backend)
+    return QuantumKernel(feature_map=qfm_eq12, quantum_instance=qcomp_backend)
