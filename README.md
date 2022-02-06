@@ -1,6 +1,7 @@
 # InSilicoQ
 
-**InSilicoQ** is a __Quantum Computation__ based package for various steps in __Drug Design and Discovery__. Drug design is a highly complicated process and It involves lots of steps. By InSilicoQ, we aim to utlize Quantum Computing for faster Virtual Screening and De Neuvo drug design. 
+**InSilicoQ** is a __Quantum Computation__ based package for various steps in __Drug Design and Discovery__. Drug design is a highly complicated process and It involves lots of steps. By InSilicoQ, we aim to utlize Quantum Computing for faster Virtual Screening and De Novo drug design. 
+![NISQ in Drug Desien] (./Img/NISQ.png)
 
 
 ## A few words about Quantum Computing
@@ -15,7 +16,8 @@ and Quantum Machine Learning Algorithms.
 * Quantum Kernel Methods
 
 ## A few words about Drug Desgin 
-The applications included in the first steps are using speedup offerd by Quantum Algorithms discussed for __Genome Sequencing__.
+The applications included in the first steps are using speedup offerd by Quantum Algorithms discussed for __Genome Sequencing__. 
+
 
 ## Installation
 
@@ -27,11 +29,9 @@ The project uses __Qiskit__ for performing Quantum Computation routines which is
 
 
 
-
-
-
 **Project Status:** In progress (Adding Quantum Kernel methods soon)  
 
 ## Refrences
+[1]- https://qiskit.org/documentation/
 
 
