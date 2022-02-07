@@ -32,7 +32,7 @@ The project uses __Qiskit__ for performing Quantum Computation routines which is
 ```
 $git clone https://github.com/QaiAbdi/InSilicoQ.git
 $cd ../InSilicoQ
-$pip install requirments.txt
+$pip install -r requirments.txt
 $python setup.py install
 ```
 
@@ -45,12 +45,14 @@ $python setup.py install
 
 
 ## Project Status
- In progress ... (Quantum Kernel methods Added)  
+ In progress ... 
+ - Quantum Kernel methods Added
+ 
 
 ## References
 [1]- https://qiskit.org/documentation/
-[2]- Suzuki, Y., Yano, H., Gao, Q. et al. Analysis and synthesis of feature map for kernel-based quantum classifier. Quantum Mach. Intell. 2, 9 (2020). https://doi.org/10.1007/s42484-020-00020-y
-[3]- Havlíček, V., Córcoles, A.D., Temme, K. et al. Supervised learning with quantum-enhanced feature spaces. Nature 567, 209–212 (2019). https://doi.org/10.1038/s41586-019-0980-2
+[2]- Suzuki, Y., Yano, H., Gao, Q. et al. Analysis and synthesis of feature map for kernel-based quantum classifier. Quantum Mach. Intell. 2, 9 (2020). 
+[3]- Havlíček, V., Córcoles, A.D., Temme, K. et al. Supervised learning with quantum-enhanced feature spaces. Nature 567, 209–212 (2019). 
 [4]- https://qiskit.org/documentation/machine-learning/tutorials/03_quantum_kernel.html
 
 

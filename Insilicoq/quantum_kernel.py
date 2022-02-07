@@ -1,9 +1,7 @@
-# Quantum Kernel Machine Learning Functions
+# Quantum Kernel Machine Learning Functions 
 
 import numpy as np
-# Importing standard Qiskit libraries
-from qiskit import QuantumCircuit, transpile, Aer, IBMQ
-from qiskit.visualization import *
+
 ## Utilities
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
@@ -11,6 +9,9 @@ from matplotlib.colors import ListedColormap
 from typing import Optional, Callable, List, Union
 from functools import reduce
 
+# Importing standard Qiskit libraries
+from qiskit import QuantumCircuit, transpile, Aer, IBMQ
+from qiskit.visualization import *
 # Qiskit imports 
 from qiskit import BasicAer
 from qiskit.circuit.library import ZZFeatureMap, PauliFeatureMap
@@ -24,6 +25,16 @@ from qiskit_machine_learning.datasets import ad_hoc_data
 # seed for ramdomization, to keep outputs consistent
 seed = 123456
 
+#Quantum Computing Backend used in Quantum Kernels
+qcomp_backend = QuantumInstance(BasicAer.get_backend('qasm_simulator'), shots=1024,
+                                seed_simulator=seed, seed_transpiler=seed)
+                                
+
+
+"""
+The following functions are implementations of ref[2] and the corresponding equations are numberd according to the paper.
+
+"""
 def data_map_eq8(x: np.ndarray) -> float:
     """
     Define a function map from R^n to R.
@@ -55,43 +66,47 @@ def data_map_eq12(x: np.ndarray) -> float:
     
     
     
-qfm_default = PauliFeatureMap(feature_dimension=2, 
-                                    paulis = ['ZI','IZ','ZZ'],
-                                 reps=2, entanglement='full')
-qfm_eq8 = PauliFeatureMap(feature_dimension=2, 
-                                    paulis = ['ZI','IZ','ZZ'],
-                                 reps=2, entanglement='full', data_map_func=data_map_eq8)
-qfm_eq9 = PauliFeatureMap(feature_dimension=2, 
-                                    paulis = ['ZI','IZ','ZZ'],
-                                 reps=2, entanglement='full', data_map_func=data_map_eq9)
-qfm_eq10 = PauliFeatureMap(feature_dimension=2, 
-                                    paulis = ['ZI','IZ','ZZ'],
-                                 reps=2, entanglement='full', data_map_func=data_map_eq10)
-qfm_eq11 = PauliFeatureMap(feature_dimension=2, 
-                                    paulis = ['ZI','IZ','ZZ'],
-                                 reps=2, entanglement='full', data_map_func=data_map_eq11)
-qfm_eq12 = PauliFeatureMap(feature_dimension=2, 
-                                    paulis = ['ZI','IZ','ZZ'],
-                                 reps=2, entanglement='full', data_map_func=data_map_eq12)
 
-qcomp_backend = QuantumInstance(BasicAer.get_backend('qasm_simulator'), shots=1024,
-                                seed_simulator=seed, seed_transpiler=seed)
+#Define Quantum Kernels Functions
 
 def qkern_default():
+    qfm_default = PauliFeatureMap(feature_dimension=2, 
+                                    paulis = ['ZI','IZ','ZZ'],
+                                 reps=2, entanglement='full')
 
     return  QuantumKernel(feature_map=qfm_default, quantum_instance=qcomp_backend)
 
 def qkern_eq8():
+    qfm_eq8 = PauliFeatureMap(feature_dimension=2, 
+                                    paulis = ['ZI','IZ','ZZ'],
+                                 reps=2, entanglement='full', data_map_func=data_map_eq8)
+
     return  QuantumKernel(feature_map=qfm_eq8, quantum_instance=qcomp_backend)
 
 def qkern_eq9():
+    qfm_eq9 = PauliFeatureMap(feature_dimension=2, 
+                                    paulis = ['ZI','IZ','ZZ'],
+                                 reps=2, entanglement='full', data_map_func=data_map_eq9)
+
     return  QuantumKernel(feature_map=qfm_eq9, quantum_instance=qcomp_backend)
 
 def qkern_eq10():
+    qfm_eq10 = PauliFeatureMap(feature_dimension=2, 
+                                    paulis = ['ZI','IZ','ZZ'],
+                                 reps=2, entanglement='full', data_map_func=data_map_eq10)
+
     return  QuantumKernel(feature_map=qfm_eq10, quantum_instance=qcomp_backend)
 
 def qkern_eq11():
+    qfm_eq11 = PauliFeatureMap(feature_dimension=2, 
+                                    paulis = ['ZI','IZ','ZZ'],
+                                 reps=2, entanglement='full', data_map_func=data_map_eq11)
+
     return  QuantumKernel(feature_map=qfm_eq11, quantum_instance=qcomp_backend)
 
 def qkern_eq12():
+    qfm_eq12 = PauliFeatureMap(feature_dimension=2, 
+                                    paulis = ['ZI','IZ','ZZ'],
+                                 reps=2, entanglement='full', data_map_func=data_map_eq12)
+
     return QuantumKernel(feature_map=qfm_eq12, quantum_instance=qcomp_backend)
