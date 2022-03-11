@@ -6,5 +6,6 @@ rdkit-pypi
 chembl_webresource_client
 pubchempy
 sklearn
+tensorflow
 matplotlib
 seaborn
