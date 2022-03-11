@@ -1,11 +1,12 @@
 numpy
 pandas
+sklearn
+tensorflow
+matplotlib
+seaborn
 qiskit
 qiskit_machine_learning
 rdkit-pypi
 chembl_webresource_client
 pubchempy
-sklearn
-tensorflow
-matplotlib
-seaborn
+

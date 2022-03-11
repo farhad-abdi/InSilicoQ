@@ -8,13 +8,7 @@
 ## A few words about Quantum Computing
 
 Quantum commuting is emerging as a powerful computational model. The main algorithms implemented in the package consist of Variational Quantum Algorithms (VQA)
-and Quantum Machine Learning Algorithms. The package is intended to contain the following algorithms beside __Qiskit__ default functionality: 
-
-* Variational Quantum Algorithms (VQA)
-* Quantum Principal Component Analysis(QPCA)
-* Quantum-Kmean
-* Quantum Neural Networks
-* Quantum Kernel Methods
+and Quantum Machine Learning Algorithms. 
 
 ## A few words about Drug Design 
 The applications included in the first steps are using the speedup offered by __Quantum Algorithms__ mentioned above for __Property Prediction__,__Molecule Generation__, __Genome Sequencing__ and more. 
@@ -23,6 +17,7 @@ The applications included in the first steps are using the speedup offered by __
 The project uses __Qiskit__ for performing Quantum Computation routines which is a __IBM SDK__. The __Colab Notebook__ provides a guide how to use the integrated packages. Integrated Tools and Datasets:
 
 * Qiskit
+* Tensorflow
 * Rdkit
 * Pubchem API
 * ChEMBL API
@@ -48,6 +43,7 @@ $python setup.py install
  In progress ... 
  - Data Encoding Added
  - Quantum Kernel methods Added
+ - Quantum GAN Added
  
 
 ## References
@@ -56,7 +52,7 @@ $python setup.py install
 [3]- Havlíček, V., Córcoles, A.D., Temme, K. et al. Supervised learning with quantum-enhanced feature spaces. Nature 567, 209–212 (2019). 
 [4]- https://qiskit.org/documentation/machine-learning/tutorials/03_quantum_kernel.html
 [5]- Carlos Outeiral1, Martin Strahm, et al. The prospects of quantum computing in computational ,molecular biology. (2020)
-
+[6]- Junde Li, Rasit Topaloglu, Swaroop Ghosh. Quantum Generative Models for Small Molecule Drug Discovery (2021)
 
 
 
