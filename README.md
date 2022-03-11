@@ -47,12 +47,12 @@ $python setup.py install
  
 
 ## References
-[1]- https://qiskit.org/documentation/
-[2]- Suzuki, Y., Yano, H., Gao, Q. et al. Analysis and synthesis of feature map for kernel-based quantum classifier. Quantum Mach. Intell. 2, 9 (2020). 
-[3]- Havlíček, V., Córcoles, A.D., Temme, K. et al. Supervised learning with quantum-enhanced feature spaces. Nature 567, 209–212 (2019). 
-[4]- https://qiskit.org/documentation/machine-learning/tutorials/03_quantum_kernel.html
-[5]- Carlos Outeiral1, Martin Strahm, et al. The prospects of quantum computing in computational ,molecular biology. (2020)
-[6]- Junde Li, Rasit Topaloglu, Swaroop Ghosh. Quantum Generative Models for Small Molecule Drug Discovery (2021)
+[1]- Qiskit Documentation https://qiskit.org/documentation/ <br/>
+[2]- Suzuki, Y., Yano, H., Gao, Q. et al. Analysis and synthesis of feature map for kernel-based quantum classifier. Quantum Mach. Intell. 2, 9 (2020). <br/>
+[3]- Havlíček, V., Córcoles, A.D., Temme, K. et al. Supervised learning with quantum-enhanced feature spaces. Nature 567, 209–212 (2019). <br/>
+[4]- Qiskit Machine Learning Documentation https://qiskit.org/documentation/machine-learning <br/>
+[5]- Carlos Outeiral1, Martin Strahm, et al. The prospects of quantum computing in computational ,molecular biology. (2020) <br/>
+[6]- Junde Li, Rasit Topaloglu, Swaroop Ghosh. Quantum Generative Models for Small Molecule Drug Discovery (2021) <br/>
 
 
 
