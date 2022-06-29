@@ -3,7 +3,7 @@ from setuptools import setup
 long_description = open("README.md").read()
 
 setup(
-    name='Insilicoq',
+    name='insilicoq',
     version='0.1',
     description='A Python package for Quantum Computation based Drug Desgin.',
     long_description_content_type="text/markdown",
@@ -18,7 +18,7 @@ setup(
     author='Farhad Abdi',
     author_email='qai.abdi@gmail.com',
     license='MIT',
-    packages=['Insilicoq'],
+    packages=['insilicoq'],
     install_requires=[],
     include_package_data=True,
     package_data={
