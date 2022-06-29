@@ -2,7 +2,7 @@
 
 **In Silico Quantum** is a __Quantum Computation__ based package for various steps in __Drug Design and Discovery__. Drug design is a highly complicated process and It involves lots of steps. By InSilicoQ, we aim to utilize Quantum Computing for faster Virtual Screening, Small Molecule and De Novo drug design. 
 
-![NISQ in Drug Design](./Img/NISQ.png)
+![NISQ in Drug Design](./img/NISQ.png)
 
 
 ## A few words about Quantum Computing
