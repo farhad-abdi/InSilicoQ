@@ -25,7 +25,7 @@ def angle_encoding(num_qubit, data):
   
   data  = normalize(data)
   feature_map = ZFeatureMap(feature_dimension= num_qubit, reps = 1 )
-  data_circ = feature_map.assign_parameters(data[0])
+  data_circ = feature_map.assign_parameters(data[0]/2)
 
   return data_circ
  

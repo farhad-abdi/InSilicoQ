@@ -6,7 +6,7 @@ matplotlib
 seaborn
 qiskit
 qiskit_machine_learning
+pylatexenc
 rdkit-pypi
 chembl_webresource_client
 pubchempy
-
