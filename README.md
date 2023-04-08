@@ -17,7 +17,7 @@ The applications included in the first steps are using the speedup offered by __
 The project uses __Qiskit__ for performing Quantum Computation routines which is a __IBM SDK__. The __Colab Notebook__ provides a guide how to use the integrated packages. Integrated Tools and Datasets:
 
 * Qiskit
-* Tensorflow
+* PyTorch
 * Rdkit
 * Pubchem API
 * ChEMBL API
