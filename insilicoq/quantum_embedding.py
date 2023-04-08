@@ -29,3 +29,29 @@ def angle_encoding(num_qubit, data):
 
   return data_circ
  
+def amplitude_encoding(data):
+  
+  '''
+  Args:
+  data: 1D numpy array
+  
+  Return:
+  Quantum Circ
+  '''
+  
+  cof = np.sum(np.power(data,2))
+  state = (1/np.sqrt(cof)) * data
+  num_qubit = int(math.log2(len(data)))
+  #how many time decopose trail and error!?
+  decompose_time = len(data)
+  
+  circ = QuantumCircuit(num_qubit)
+  print(list(np.arange(num_qubit)))
+  circ.prepare_state(state, list(np.arange(num_qubit)))
+  circ = circ.decompose(reps = decompose_time)
+ 
+  return circ
+ 
+ 
+ 
+ 
