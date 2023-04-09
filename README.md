@@ -22,7 +22,7 @@ The project uses __Qiskit__ for performing Quantum Computation routines which is
 * Pubchem API
 * ChEMBL API
 
-##How it works
+## How it works
 
 Peurly quantum computation procedures, first you need to prepare or encode data using methods like angle encoding, amplitude encoding. Next you need to define the qunatum network using predefined packages in the repo and finnaly doing quantum mesearment.
 
@@ -38,7 +38,7 @@ $pip install -r requirments.txt
 $python setup.py install
 ```
 
-##Contribution
+## Contribution
 Don't hesitate! If you are a researcher in quantum computing, drug design or machine learning feel free to open an issue we can exchange ideas!
 
 
@@ -48,7 +48,7 @@ Don't hesitate! If you are a researcher in quantum computing, drug design or mac
  - Data Encoding Added
  - Quantum Kernel methods Added
  - Quantum GAN Added
- 
+ - Classic Part mostly done
 
 
 
