@@ -1,7 +1,8 @@
 numpy
 pandas
 sklearn
-tensorflow
+torch
+transformers
 matplotlib
 seaborn
 qiskit
