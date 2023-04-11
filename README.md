@@ -1,4 +1,6 @@
 ![Logo](./img/LOGO.PNG)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1x11iRW3juud9GJt3kvZA24tzGrR4xaWc?usp=sharing)
+
 
 **In Silico Quantum** is a __Quantum Computation__ based package for various steps in __Drug Design and Discovery__. Drug design is a highly complicated process and It involves lots of steps. By InSilicoQ, we aim to utilize Quantum Computing for faster Virtual Screening, Small Molecule and De Novo drug design. 
 
