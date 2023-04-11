@@ -4,20 +4,29 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from torch.nn import Module
-from torch.nn import Conv2d
-from torch.nn import Linear
-from torch.nn import MaxPool2d
-from torch.nn import ReLU
-from torch.nn import LogSoftmax
-from torch import flatten
 
 
 class Classic_Net(nn.Module):
   
-  def __init__(self, net_type:str):
-    #net type to be created
+  def __init__(self, net_type:str, input_size:int):
+    super().__init__()
+    
+    self.type = net_type #net type to be created
+    self.input_size = input_size
+    
+    #example discremiator parameters
+    self.linear_input = nn.Linear(input_size, 20)
+    self.leaky_relu = nn.LeakyReLU(0.2)
+    self.linear20 = nn.Linear(20, 1)
+    self.sigmoid = nn.Sigmoid()
+    
+    
     
     
   def forward(self):
-    
+    if self.type = 'Discriminator':   
+      x = self.linear_input(input)
+      x = self.leaky_relu(x)
+      x = self.linear20(x)
+      x = self.sigmoid(x)
+      return x
