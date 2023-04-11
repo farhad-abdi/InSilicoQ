@@ -3,10 +3,43 @@ from qiskit import QuantumCircuit, Aer, execute
 from qiskit.visualization import plot_histogram
 # Importing qiskit machine learning parameters
 from qiskit.circuit import Parameter, ParameterVector
-
 from qiskit.circuit.library import TwoLocal
 
+#first net imports
+from qiskit import QuantumCircuit
+from qiskit.circuit.library import EfficientSU2
+from qiskit.primitives import Sampler
+from qiskit_machine_learning.connectors import TorchConnector
+from qiskit_machine_learning.neural_networks import SamplerQNN
 
+# created quantum neural network in TorchConnector to make use of PyTorch-based training.
+def QGenerator(num_qubits) -> TorchConnector:
+  
+    qc = QuantumCircuit(num_qubits)
+    qc.h(qc.qubits)
+    ansatz = EfficientSU2(num_qubits, reps=6)
+    qc.compose(ansatz, inplace=True)
+    
+    print(qc.num_parameters)
+    
+    shots = 10000
+    sampler = Sampler(options={"shots": shots, "seed": algorithm_globals.random_seed})
+    
+    qnn = SamplerQNN(
+        circuit=qc,
+        sampler=sampler,
+        input_params=[],
+        weight_params=qc.parameters,
+        sparse=False,
+    )
+
+    initial_weights = algorithm_globals.random.random(qc.num_parameters)
+    return TorchConnector(qnn, initial_weights)
+
+
+
+
+#alternative qgan
 class QGAN:
   def __init__(self, num_qubit):
     self.num_q = num_qubit
