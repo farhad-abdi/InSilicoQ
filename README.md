@@ -35,11 +35,8 @@ The project uses __Qiskit__ for performing Quantum Computation routines which is
 
 ## Installation
 
-```
-$git clone https://github.com/QaiAbdi/InSilicoQ.git
-$cd ../InSilicoQ
-$pip install -r requirments.txt
-$python setup.py install
+``` bash
+$pip install git+https://github.com/farhad-abdi/InSilicoQ.git
 ```
 
 ## Contribution
@@ -49,10 +46,10 @@ Don't hesitate! If you are a researcher in quantum computing, drug design or mac
 
 ## Project Status
  In progress ... 
- - Data Encoding Added
- - Quantum Kernel methods Added
- - Quantum GAN Added
- - Classic Part mostly done
+ - [x] Data Encoding 
+ - [x] Quantum Kernel methods 
+ - [x] Quantum GAN 
+ - [x] Classic Part 
 
 
 
