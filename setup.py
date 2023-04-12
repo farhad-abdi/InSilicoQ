@@ -22,7 +22,6 @@ setup(
     install_requires=[
         'numpy',
         'pandas',
-        'sklearn',
         'torch',
         'transformers',
         'matplotlib',
