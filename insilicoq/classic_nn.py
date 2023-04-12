@@ -6,7 +6,7 @@ import torch.nn as nn
 import torch.optim as optim
 
 
-class Classic_Net(nn.Module):
+class ClassicNet(nn.Module):
   
   def __init__(self, net_type:str, input_size:int):
     super().__init__()
