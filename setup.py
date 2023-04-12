@@ -32,6 +32,6 @@ setup(
         'pylatexenc',
         'rdkit-pypi',
         'chembl_webresource_client',
-        'pubchempy
+        'pubchempy'
     ],
 )
