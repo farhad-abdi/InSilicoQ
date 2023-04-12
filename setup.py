@@ -19,10 +19,19 @@ setup(
     author_email='qai.abdi@gmail.com',
     license='MIT',
     packages=['insilicoq'],
-    install_requires=[],
-    include_package_data=True,
-    package_data={
-        
-    },
-    zip_safe=False
+    install_requires=[
+        'numpy',
+        'pandas',
+        'sklearn',
+        'torch',
+        'transformers',
+        'matplotlib',
+        'seaborn',
+        'qiskit',
+        'qiskit_machine_learning',
+        'pylatexenc',
+        'rdkit-pypi',
+        'chembl_webresource_client',
+        'pubchempy
+    ],
 )
