@@ -9,11 +9,11 @@ import torch.nn as nn
 
 class Embedding:
   
-  def __init__(self, model_type:str, input_seq:str):
+  def __init__(self, model_type:str):
     
 
     self.model_type = model_type
-    self.seq = input_seq
+
     self.device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
     print(f'Running model on {self.device}')
@@ -32,9 +32,9 @@ class Embedding:
     
       
       
-  def forward(self):
+  def forward(self, seq):
 
-    token_encoding = self.tokenizer.batch_encode_plus(self.seq, add_special_tokens=True, padding="longest")
+    token_encoding = self.tokenizer.batch_encode_plus(seq, add_special_tokens=True, padding="longest")
     input_ids      = torch.tensor(token_encoding['input_ids']).to(self.device)
     attention_mask = torch.tensor(token_encoding['attention_mask']).to(self.device)
 
