@@ -24,7 +24,7 @@ class ClassicNet(nn.Module):
     
     
   def forward(self):
-    if self.type = 'Discriminator':   
+    if self.type == 'Discriminator':   
       x = self.linear_input(input)
       x = self.leaky_relu(x)
       x = self.linear20(x)
