@@ -24,6 +24,7 @@ setup(
         'pandas',
         'torch',
         'transformers',
+        'sentencepiece',
         'matplotlib',
         'seaborn',
         'qiskit',
