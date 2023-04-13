@@ -17,13 +17,16 @@ __Installation__
 $pip install git+https://github.com/farhad-abdi/InSilicoQ.git
 ```
 
-__Peurly quantum computation procedures__, first you need to prepare or encode data using methods like angle encoding, amplitude encoding. Next you need to define the qunatum network using predefined packages in the repo and finnaly doing quantum mesearment.
+__Peurly quantum computation procedures__
+First you need to prepare or encode data using methods like angle encoding, amplitude encoding. Next you need to define the qunatum network using predefined packages in the repo and finnaly doing quantum mesearment.
 ![Quantum NN](./img/QNN.jpg)
 
-__Hybrid calssical machine learning and quantum computing__, in this setup part of network or algorithm is classic and other part is quantum. For classical part you can use GAN, CNN, ...
+__Hybrid calssical machine learning and quantum computing__
+In this setup part of network or algorithm is classic and other part is quantum. For classical part you can use GAN, CNN, ...
 ![Quantum Gan](./img/QGAN.PNG)
 
-__Large Protien Language Models__, emmbeding of Large language Models(LLM) pretrained on protien sequences can be used for downstream protien tasks.
+__Large Protien Language Models__
+Emmbeding of Large language Models(LLM) pretrained on protien sequences can be used for downstream protien tasks.
 ![LLLM](./img/LLM.PNG)
 
 ### Technologies
