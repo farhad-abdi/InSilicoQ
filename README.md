@@ -25,6 +25,7 @@ First you need to prepare or encode data using methods like angle encoding, ampl
 __Hybrid calssical machine learning and quantum computing__
 
 In this setup part of network or algorithm is classic and other part is quantum. For classical part you can use GAN, CNN, ...
+
 ![Quantum Gan](./img/QGAN.PNG)
 
 __Large Protien Language Models__
