@@ -56,6 +56,7 @@ If you are a researcher in quantum computing, drug design or machine learning fe
  - [x] Classic Networks 
  - [x] Reading Fasta
  - [x] Transformers
+ - [ ] Add support for Torch on real device
 
 
 
