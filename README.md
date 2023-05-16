@@ -42,6 +42,7 @@ The project uses __Qiskit__ for performing Quantum Computation routines which is
 * Pubchem API
 * ChEMBL API
 
+__Note:__ For integrating deep learning framework with qiskit, I will use [Torch Quantum](https://github.com/mit-han-lab/torchquantum)
 
 ## Contribution
 If you are a researcher in quantum computing, drug design or machine learning feel free to open an issue we can exchange ideas!
@@ -56,7 +57,7 @@ If you are a researcher in quantum computing, drug design or machine learning fe
  - [x] Classic Networks 
  - [x] Reading Fasta
  - [x] Transformers
- - [ ] Add support for Torch on real device
+ - [x] Add support for Torch on real device
 
 
 
