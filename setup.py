@@ -27,7 +27,7 @@ setup(
         'sentencepiece',
         'matplotlib',
         'seaborn',
-        'qiskit',
+        'qiskit==0.31.0',
         'qiskit_machine_learning',
         'pylatexenc',
         'rdkit-pypi',
